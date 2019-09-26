@@ -78,11 +78,13 @@ ReactDOM.render(
 
 Develop locally. Your backend code is automatically synchronized to a local dev server. The same interactive experience Webpack provides for your React code, is now available for backend code as well.
 
-[todo: image]
+<img src="https://raw.githubusercontent.com/binaris/dev-docs-content/master/assets/hello_world.png?token=AAR6X63TBY7BH3INTOBIJXK5SZ6Q4" alt="drawing" style="width:600px;"/>
 
 Deploy to the cloud. When you are ready to share your work with others, simply run npx reshuffle deploy to deploy your code onto our scalable cloud infrastructure.
 
-[TODO: cmd]
+```js
+npx reshuffle deploy
+```
 
 ## A simple idea
 
@@ -95,5 +97,58 @@ This unified structure allows you to build fully functional applications, withou
 
 ## We are developers
 
-[TODO: markdown]
+<table>
+ <tr>
+   <td><b>Michael Adda</b><br/>
+     <img alt="Michael" src="https://binaris.com/jobs/images/michael_adda.png"/><br/>
+     Co-founder & CTO, father, kernel surgeon, <a href="https://nethack.org/common/index.html">nethack</a> addict, wears pink
+   </td>
+   <td><b><a href="https://github.com/bergundy">Roey Berman</a></b><br/>
+     <img alt="Roey" src="https://avatars1.githubusercontent.com/u/52304?s=256&v=4" /><br/>
+     There's only one book in my library, and that's
+     <a href="https://en.wikipedia.org/wiki/The_C_Programming_Language">The Bible</a>
+   </td>
+ </tr>
+ <tr>
+   <td><b>Avner Braverman</b><br/>
+     <img alt="Avner" src="https://binaris.com/jobs/images/avner_braverman.png"/><br/>
+     Co-founder & CEO, HPC by trade, UX by passion
+   </td>
+   <td><b>Ryland Goldstein</b><br/>
+     <img alt="Ryland" src="https://binaris.com/jobs/images/ryland_goldstein.png" /><br/>
+     Binaris California head, United frequent flyer
+   </td>
+ </tr>
+ <tr>
+   <td><b>Arik Maor</b><br/>
+     <img alt="Arik" src="https://binaris.com/jobs/images/arik.jpg" height="250" /><br/>
+     Cat lover, custom standing desk owner
+   </td>
+   <td><b>Nimo Naamani</b><br/>
+     <img alt="Nimo" src="https://avatars0.githubusercontent.com/u/2087890?s=256" height="250"/><br/>
+     The NZ delegate, Hiker. Forever learning.
+   </td>
+ </tr>
+ <tr>
+   <td><b>Ariel Shaqed (Scolnicov)</b><br/>
+     <img alt="Ariel" src="https://binaris.com/jobs/images/ariel_shaqed__scolnicov_.png"/><br/>
+     Stops coding early twice a week to enjoy 3 kids.  I have a slide rule
+     and I'm not afraid to use it!
+   </td>
+   <td><b>Amir Shevat</b><br/>
+     <img alt="Amir" src="https://binaris.com/jobs/images/amir-shevat.jpg" height="250" /><br/>
+     Co-founder & CPO, husband of one, father of two + a cat and a dog. Author of <a href="https://www.amazon.com/Amir-Shevat/e/B072C99151">books</a>.
+   </td>
+ </tr>
+ <tr>
+   <td><b>Olga Zelenko</b><br/>
+     <img alt="Olga" src="https://binaris.com/jobs/images/olga_zelenko.jpg" height="250" /><br/>
+     Mother, wife, photographer and designer at heart
+   </td>
+   <td><b>Vladimir Zoubritsky</b><br/>
+     <img alt="Vladimir" src="https://binaris.com/jobs/images/vladimir_zoubritsky.png" /><br/>
+     Embarrassingly parallel programmer, mechanical keyboards collector
+   </td>
+ </tr>
+</table>
 
