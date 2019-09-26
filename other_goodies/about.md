@@ -92,7 +92,7 @@ Today, most apps consist of three parts: frontend code, backend code and data. O
 The idea behind Reshuffle is very simple. We integrate frontend, backend and data into a single fully-functional unit. This allows us to run any such unit with a click of a button, because it already contains everything it needs in order to run. It also allows us to scale resources as needed to accomodate load.
 This unified structure allows you to build fully functional applications, without handling the complexities of distributed backend coding and cloud operations.
 
-[TODO: image]
+<img src="https://raw.githubusercontent.com/binaris/dev-docs-content/master/assets/hello_world.png?token=AAR6X63TBY7BH3INTOBIJXK5SZ6Q4" alt="drawing" style="width:600px;"/>
 
 
 ## We are developers
