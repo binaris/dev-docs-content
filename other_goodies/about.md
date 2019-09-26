@@ -1,40 +1,99 @@
 ---
-title: Terms of Service
-route: terms-of-service
-description: 'Terms of service'
+title: About Reshuffle  
+route: about 
+description: 'Terms of Service'
 category: 'Other Goodies'
-priority: 1
+priority: 3
 ---
 
-# Reshuffle Beta Test License Agreement
-## Last updated: Sep 26 2019
+# About Reshuffle 
+**Our mission is to make developers more creative.** We do that by making you more productive and helping you share your best work with other developers.
+
+Reshuffle enables [React](https://reactjs.org) developers to build end-to-end applications without managing the cloud. Simply add backend code to your React project, and we will deploy your code to the cloud and scale to handle thousands of users and millions of requests.
+
+Reshuffle is a community of developers sharing and reusing code to build better applications. You can start new projects from any of the many templates on our site. You are welcome to share your code back as templates for other people to start from.
+
+## Right now, everything is free
+Our free cloud tier is available today. You can deploy and run any app with the following limits:
+
+- 1000 requests per second
+
+- 1 second request timeout
+
+- 1GB data and files storage
+
+In the future, we will offer an unlimited premium tier. We will soon release an open source runtime, so you can run apps in your own environment.
+
+## How it works
+
+Reshuffle apps are built around [Create-react-app](https://github.com/facebook/create-react-app). After remixing an app and downloading its code, simply run *npm install && npm start*. You can then edit your app using your favorite tools the familiar interactive Webpack workflow we all ❤️
+
+```js
+npm install && npm start
+```
+
+Add backend code directly into your React project. All Reshuffle apps include a backend folder where you place your backend files. Backend code can be written with plain JavaScript, meaning you can use advanced ES7 features and any npm package you require (ha!).
+
+Annotate your endpoint functions so that Reshuffle knows which functions to make available to the frontend and which can only be called by other backend functions.
+
+We comment out the @expose decorator until decorators become an official part of JavaScript 🤞
+
+```js
+/**
+ * Form customized greeting.
+ *
+ * @return { Promise<string> } - greeting text
+ */
+/* @expose */
+export async function greet(name) {
+  return `Hello ${name}!`;
+}
+```
+
+No HTTP required to call a backend function. We automatically replace native JavaScript function calls with HTTP requests to the backend. We handle argument encoding, error codes and network error for you. All you have to do is call a function.
+
+```js
+import React, { useState, useEffect } from 'react';
+import ReactDOM from 'react-dom';
+import { greet } from '../backend/greeting';
 ​
-This Reshuffle Beta Test License Agreement (this "**Agreement**") governs your test use of a preview version of the proprietary software platform, including any associated software development kits and application programming interfaces, (the "**Software**") created by and made available to you by Binaris, Inc. (known as "**Reshuffle**") hereunder, which is currently under development and is designed to facilitate the development, hosting and deployment of applications. By clicking on the "I accept" button or by downloading, installing or using the Software, you accept all terms of this Agreement. If you are accepting the terms of this Agreement on behalf of a company or other legal entity, you represent that you have the authority to bind that company or other legal entity to the terms of this Agreement, and, in such event, "you" and "your" will refer to that company or other legal entity. If you do not accept all the terms of this Agreement, then you must destroy all copies of the Software in your possession or control.
+function App() {
+  const [greeting, setGreeting] = useState(undefined);
 ​
-### 1. Restrictions on Use of the Software
+  useEffect(() => {
+    if (greeting === undefined) {
+      greet('world').         // <- Magic happens here
+        then(setGreeting);
+    }
+  }, []);
 ​
-Although Reshuffle has released the Software under the MIT open source license, you agree that your use of the preview version of the Software will be subject to the following restrictions: You will use the Software obtained under this Agreement solely for the purposes of testing and evaluation, and not for general production or any other commercial use. You will not (a) modify or create derivative works of the Software, in whole or in part; (b) remove or alter any proprietary notice on or in the Software; or (c) use the Software or any other Confidential Information for competitive analysis or benchmarking purposes. The download of the Software will be accompanied by other third party software packages that run in conjunction with the Software. Those packages are subject to their own license agreements, which shall govern your use of those packages, rather than this Agreement.
+  return greeting ? (<h1>{greeting}</h1>) : 'Loading...';
+}
 ​
-### 2. Feedback and Ownership
-​
-You will use good faith efforts to test the Software and cooperate with Reshuffle in evaluating the Software, and work with Reshuffle to identify and help resolve any errors, problems or defects in the Software. Any suggestions, descriptions, test results, requests or other feedback provided orally or in writing by you to Reshuffle regarding the Software will constitute "**Feedback**" and will be solely owned by Reshuffle. You assign all of your right, title and interest (including all intellectual property rights) in and to any Feedback to Reshuffle and will take all actions and execute all documents requested by Reshuffle to give effect to such assignment. As between Reshuffle and you, Reshuffle will solely own all right, title and interest (including all intellectual property rights) in and to the Software and all copies, improvements, modifications, and derivative works thereof.
-​
-### 3. Confidential Information
-​
-3.1. *Definition*. Confidential Information means: (a) all Feedback; and (b) any business or technical information of Reshuffle, including any information relating to Reshuffle's product plans, designs, costs, product prices and names, finances, marketing plans, business opportunities, personnel, research, development or know-how that is identified at the time of disclosure as confidential or, given the circumstances of disclosure or the nature of the information, reasonably should be considered to be confidential. Confidential Information does not include any information that: (i) is or becomes generally known to the public through no fault or breach of this Agreement by you; (ii) is rightfully known by you at the time of disclosure without an obligation of confidentiality (as can be demonstrated by written records or other reasonable evidence); (iii) is independently developed by you without access to or use of any Confidential Information (as can be demonstrated by written records or other reasonable evidence); or (iv) is rightfully obtained by you from a third party without restriction on use or disclosure (as can be demonstrated by written records or other reasonable evidence).
-​
-3.2. *Restrictions*. You will not disclose any Confidential Information to any third party or use any Confidential Information except as necessary to test and evaluate the Software and to provide Feedback. You will use all reasonable efforts to protect Confidential Information from unauthorized use or disclosure. You may disclose Confidential Information only to those of your employees who have a bona fide need to know such Confidential Information for the testing and evaluation of the Software and providing Feedback, provided that each such employee first executes or is otherwise already bound by a written agreement that contains use and nondisclosure restrictions at least as protective of the Confidential Information as those set forth in this Agreement. Upon Reshuffle's request, you will promptly destroy all copies of, and notes containing, any Confidential Information in your possession or control.
-​
-### 4. Disclaimers
-​
-4.1. *Warranty Disclaimers*. The Software and Confidential Information are being provided "AS IS" without any warranties. BINARIS HEREBY DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT, AND ANY WARRANTIES ARISING OUT OF COURSE OF DEALING OR USAGE OF TRADE. WITHOUT LIMITING THE FOREGOING, BINARIS HEREBY DISCLAIMS ANY WARRANTY THAT USE OF THE SOFTWARE WILL BE ERROR-FREE, BUG-FREE OR UNINTERRUPTED.
-​
-4.2. *Acknowledgment of Development Status of the Software*. You acknowledge and agree that: (a) the Software is still under development and has not been commercially released by Reshuffle or otherwise disclosed to the public; (b) the Software is not in final form and may not operate properly or be fully functional; (c) the Software may contain errors, design flaws or other problems; (d) it may not be possible to make the Software fully functional; (e) the information obtained using the Software may not be accurate; (f) use of the Software may result in unexpected results, loss of data or communications, project delays or other unpredictable damage or loss, and it is your responsibility to back up and restore any data that you store in or transmit through the Software; (g) Reshuffle is under no obligation to release a commercial version of the Software; and (h) Reshuffle has the right unilaterally to abandon development of the Software, at any time and without any obligation or liability to you.
-​
-### 5. Limitation on Liability
-​
-IN NO EVENT WILL BINARIS OR ANY OF ITS AFFILIATES BE LIABLE TO YOU OR TO ANY THIRD PARTY FOR DAMAGES OF ANY KIND, INCLUDING BUT NOT LIMITED TO DIRECT, SPECIAL, INCIDENTAL, PUNITIVE OR CONSEQUENTIAL DAMAGES (INCLUDING LOSS OF USE, DATA, BUSINESS OR PROFITS) ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT OR THE INSTALLATION OR USE OF OR INABILITY TO USE THE SOFTWARE OR FOR ANY ERROR OR DEFECT IN THE SOFTWARE, WHETHER SUCH LIABILITY ARISES FROM ANY CLAIM BASED UPON CONTRACT, WARRANTY, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY OR OTHERWISE, AND WHETHER OR NOT BINARIS HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSS OR DAMAGE. THE PARTIES HAVE AGREED THAT THESE LIMITATIONS WILL SURVIVE AND APPLY EVEN IF ANY LIMITED REMEDY SPECIFIED IN THIS AGREEMENT IS FOUND TO HAVE FAILED OF ITS ESSENTIAL PURPOSE.
-​
-### 6. General Provisions
-​
-You may not assign this Agreement or any of your rights or obligations hereunder, in whole or in part, by operation of law or otherwise, without the prior written consent of Reshuffle, and any attempt to do so without consent will be of no effect. This Agreement will be governed by and construed in accordance with the laws of the State of California (excluding its body of law controlling conflicts of law). If any provision of this Agreement is held invalid or unenforceable by a court of competent jurisdiction, such provision will be construed so as to be enforceable to the maximum extent permissible by law, and the remaining provisions of the Agreement will remain in full force and effect. This Agreement constitutes the entire and exclusive agreement between the parties pertaining to its subject matter, and supersedes any and all prior agreements, communications, and understandings (both written and oral) regarding such subject matter. This Agreement may be modified, or any rights under it waived, only by a written document executed by both parties.
+ReactDOM.render(
+  <App/>,
+  document.getElementById('root')
+);
+```
+
+Develop locally. Your backend code is automatically synchronized to a local dev server. The same interactive experience Webpack provides for your React code, is now available for backend code as well.
+
+[todo: image]
+
+Deploy to the cloud. When you are ready to share your work with others, simply run npx reshuffle deploy to deploy your code onto our scalable cloud infrastructure.
+
+[TODO: cmd]
+
+## A simple idea
+
+Today, most apps consist of three parts: frontend code, backend code and data. Often these independent pieces are built and maintained by different people.
+The idea behind Reshuffle is very simple. We integrate frontend, backend and data into a single fully-functional unit. This allows us to run any such unit with a click of a button, because it already contains everything it needs in order to run. It also allows us to scale resources as needed to accomodate load.
+This unified structure allows you to build fully functional applications, without handling the complexities of distributed backend coding and cloud operations.
+
+[TODO: image]
+
+
+## We are developers
+
+[TODO: markdown]
+
