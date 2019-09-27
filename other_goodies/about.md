@@ -157,4 +157,5 @@ This unified structure allows you to build fully functional applications, withou
 
 ## Funded by great investors
 
+<img src="https://raw.githubusercontent.com/binaris/dev-docs-content/master/assets/investors.png?token=AAR6X63LLBJA4MMJ4EGS3LK5S22KM" alt="drawing" style="width:600px;"/>
 
