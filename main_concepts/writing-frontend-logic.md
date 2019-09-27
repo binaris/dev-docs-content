@@ -11,7 +11,7 @@ numbered: true
 
 > Over the next 4 sections, we will go through the steps required to build the “hello Reshuffle” app <br /> ([as seen in the previous section](./hello-reshuffle)).
 
-In this section, we will build the frontend portion of the “hello Reshuffle” app. To follow along, [click here to “remix”](REPLACE_ME_WITH_REMIX_LINK) the boilerplate [Reshuffle template](REPLACE_ME_WITH_TEMPLATE_FAQ). When you remix an app with Reshuffle, the app (code and resources) are copied to your account and immediately made available. To learn more about remixing with reshuffle, [refer to the following section](REPLACE_ME_WITH_REMIX_FAQ).
+In this section, we will build the frontend portion of the “hello Reshuffle” app. To follow along, [click here to “remix”](https://reshuffle.com/template/counter-hooks) the boilerplate Reshuffle template. When you remix an app with Reshuffle, the app (code and resources) are copied to your account and immediately made available. 
 
 Here is the App.js file of the Reshuffle boilerplate template (it is exactly like what you would get from [Create React App](https://github.com/facebook/create-react-app)):
 
@@ -141,7 +141,7 @@ Now that we have our basic layout, continue by creating a stateful value to plug
     </span>
     ```
 
-With the display portion of our Component finished, we’ll want a way to increase the number. In the next section, we’ll go through the steps of connecting the button to your [Reshuffle backend](REPLACE_ME_WITH_BACKEND_FAQ), for now, let’s just get it working within the App component.
+With the display portion of our Component finished, we’ll want a way to increase the number. In the next section, we’ll go through the steps of connecting the button to your Reshuffle backend, for now, let’s just get it working within the App component.
 
 ```jsx
 <button onClick={() => setNum((prevNum) => 1 + (prevNum || 0))}>
@@ -149,7 +149,7 @@ With the display portion of our Component finished, we’ll want a way to increa
 </button>
 ```
 
-This should result in a working, frontend-only version of the hello Reshuffle example. There are some small issues (eg: the initial number displayed is `undefined` instead of 0), these will get fleshed out in a [future section](./calling-the-backend-from-the-frontend).
+This should result in a working, frontend-only version of the hello Reshuffle example. There are some small issues (eg: the initial number displayed is undefined instead of 0), these will get fleshed out in a [future section](./calling-the-frontend-from-the-backend).
 
 > Let’s look at the full example:
 <div style="text-align: right;"><span style="padding: 1%; background-color: rgba(35, 191, 98, 0.5)"> src/App.js  ↓</span></div>
@@ -176,7 +176,9 @@ function App() {
 export default App;
 ```
 
-<REPLACE_ME_WITH_REMIXED_APP_IFRAME> (as raw HTML)
+Here is the app live on Reshuffle:
+<iframe src="https://meaningful-nightingale-45.reshuffle.app" width="400" height="300"> </iframe>
+<br /><br />
 
 In the [next tutorial](./writing-backend-logic), we’ll add a backend and save our number state persistently!
 
