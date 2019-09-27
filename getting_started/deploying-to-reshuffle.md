@@ -9,7 +9,7 @@ priority: 2
 # Deploying to Reshuffle
 This section covers deploying your local code back to Reshuffle. We assume you have read and executed the steps in the [previous section](https://dev.reshuffle.app/running-locally). 
 
-**6. Run the deploy script**
+**1. Run the deploy script**
 
 Once you have a locally working app you are happy with, you will want to deploy it back to Reshuffle. In your command line, go  the project’s root folder and run npx reshuffle deploy.
 
@@ -26,6 +26,6 @@ Once you connected your GitHub account, return to the command line. At this poin
 
 You're done! Enjoy your new app!
 
-**7. Bonus points: Join the community**
+**2. Bonus points: Join the community**
 
 Be a part of our community on Discord - [join here](https://discordapp.com/channels/612049440047497217/612049440047497219).  If you are feeling extra awesome, you should create and share your own template with the community. This way other developers will be able to innovate on top of it. Here is how to [submit your  own template](https://dev.reshuffle.app/submitting-a-template).
