@@ -27,8 +27,9 @@ Clicking a template takes you to a live preview you can evaluate. This is a full
 
 Once you hit Remix, the app is deployed and linked to your account (At this point, you will be asked to log-in, if you haven't does so already) - you are now the proud owner of a Reshuffle app! Now you will be able to modify the template and make it your own. The post Remix page contains useful information about downloading the template code and associating it with your app. You can also find this information in the app settings page accessible through the My Apps menu item.
 
+<img src="https://raw.githubusercontent.com/binaris/dev-docs-content/master/assets/getting-started3.png?token=AAR6X626MRZ3MKHKMNGKQKC5S3BHE" alt="drawing" style="width:600px;"/>
 
-In the next sections, we will cover editing your app and deploying it on Reshuffle.
+In the [next sections](https://dev.reshuffle.app/running-locally), we will cover editing your app and deploying it on Reshuffle.
 
 
 
