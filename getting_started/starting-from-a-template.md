@@ -13,6 +13,8 @@ Thank you for choosing Reshuffle, you are awesome! This tutorial will walk you t
 
 At Reshuffle, every app starts from a template. Reshuffle templates are a great way to get the scaffolding out of the way and start with a working app. If you prefer to start from scratch you can always pick the [blank](https://reshuffle.com/template/blank) template as your starting point. 
 
+<img src="https://raw.githubusercontent.com/binaris/dev-docs-content/master/assets/getting-started1.png?token=AAR6X626J5Q33VOETDCBBAC5S3ACA" alt="drawing" style="width:600px;"/>
+
 So, in order to get started, hop on to [reshuffle.com](https://reshuffle.com/), pick a template that suits you, and click on it for a preview.
 
 2. Preview the template 
