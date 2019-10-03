@@ -52,7 +52,7 @@ To add content on the site, navigate to `https://<base-url>/editor`. At this poi
 
 ![](https://raw.githubusercontent.com/binaris/dev-docs-content/master/assets/dev-editor-screen.png)
 
-_The editor page_
+#### The editor page
 
 The bottom half of the page can be used to write markdown, which will be parsed and displayed in real time. The "Update" button will update the content that you're currently editing (or create it if it doesn't exist). "Select a Post" allows you to retrieve existing posts and edit them as desired.
 
@@ -85,7 +85,7 @@ To manage content on the site, navigate to `https://<base-url>/admin`. Similarly
 
 ![](https://raw.githubusercontent.com/binaris/dev-docs-content/master/assets/dev-admin-screen.png)
 
-_The admin page_
+#### The admin page
 
 The admin page provides mechanisms to enable, disable and delete pages. A home page for the site can also be set, using the "Set as home" button.
 
