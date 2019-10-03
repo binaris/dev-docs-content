@@ -35,7 +35,7 @@ With the current design, this template only works if you have a Google organizat
 
 **REACT_APP_OAUTH_CLIENT_ID**
 
-To utilize the Google-based login featured in this template, you'll need to create your own Google project. If you haven't done this already, [follow the steps described in this Google documentation.](https://developers.google.com/identity/protocols/OAuth2). Make sure to add your Reshuffle app URL as a valid origin domain on the "Credentials" page for your Google project ([Here is the generic version of that URL](https://console.developers.google.com/apis/credentials/oauthclient/)). 
+To utilize the Google-based login featured in this template, you'll need to create your own Google project. If you haven't done this already, [follow the steps described in this Google documentation.](https://developers.google.com/identity/protocols/OAuth2) Make sure to add your Reshuffle app URL as a valid origin domain on the "Credentials" page for your Google project ([Here is the generic version of that URL](https://console.developers.google.com/apis/credentials/oauthclient/)). 
 
 
 
