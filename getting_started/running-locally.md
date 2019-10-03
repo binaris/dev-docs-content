@@ -16,7 +16,7 @@ On the post Remix page, you will find information on how to download your templa
 <img src="https://raw.githubusercontent.com/binaris/dev-docs-content/master/assets/running-locally1.png?token=AAR6X64MF2GUM4QW3YSAA7C5S3DDY" alt="drawing" style="width:600px;"/>
 
 
-You can  install the code directly using the npx command  provided.Alternatively, just download the zip file of the template’s code. The command downloads the code, and immediately runs npm install. if you choose to download the zip file, you will need to run npm install yourself inside the unzipped folder. 
+You can  install the code directly using the npx command  provided. Alternatively, you can just download the zip file of the template code. The command downloads the code, and immediately runs npm install. if you choose to download the zip file, you will need to run npm install yourself inside the unzipped folder. 
 
 **2. Edit your code**
 
