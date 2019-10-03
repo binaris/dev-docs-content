@@ -9,7 +9,7 @@ priority: 1
 
 # Getting started with Reshuffle
 
-Thank you for choosing Reshuffle, you are awesome! This tutorial will walk you through the processes of creating, updating and deploying your first app on Reshuffle. We assume basic [Javascript](https://www.w3schools.com/js/) coding skills, and that you have and know how to use [React](https://reactjs.org/) and [npm](https://www.npmjs.com/).
+Thank you for choosing Reshuffle, you are awesome! This tutorial will walk you through the process of creating, updating and deploying your first app on Reshuffle. We assume basic [Javascript](https://www.w3schools.com/js/) coding skills, and that you know how to use [React](https://reactjs.org/) and [npm](https://www.npmjs.com/).
 
 **1. Pick a template as your starting point**
 
