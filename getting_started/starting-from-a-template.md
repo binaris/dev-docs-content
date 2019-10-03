@@ -21,7 +21,7 @@ So, in order to get started, hop on to [reshuffle.com](https://reshuffle.com/), 
 
 **2. Preview the template** 
 
-Clicking a template takes you to a live preview you can evaluate. This is a fully functional, private to you, version of the app this template delivers. It will not be linked to your account until you click Remix. If the template does not meet your needs, you can always go back and pick another one. Play around with the template to experience the interaction, and see if it’s what you’re looking for. Once you found a template that fits your needs - hit the Remix button to make it your own. 
+Clicking a template takes you to a live preview you can evaluate. This is a fully functional, personal version of the app. It will not be linked to your account until you click Remix. If the template does not meet your needs, you can always go back and pick another one. Play around with the template to experience the interaction, and see if it’s what you’re looking for. Once you found a template that fits your needs - hit the Remix button to make it your own. 
 <br><br>
 <img src="https://raw.githubusercontent.com/binaris/dev-docs-content/master/assets/getting-started2.png?token=AAR6X63QHNNINGGIEAR6DN25S3AU6" alt="drawing" style="width:600px;"/>
 
