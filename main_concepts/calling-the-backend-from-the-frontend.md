@@ -67,7 +67,7 @@ Connecting the frontend to the backend is super simple with Reshuffle. Here are 
     import '@reshuffle/code-transform/macro';
     ```
 
-    This macro provides the mechanism which makes the entire Reshuffle experience possible. At build time, our plugin analyzes any file that includes this macro and intelligently replaces     your local JavaScript backend calls with Reshuffle RPC calls.
+    This macro provides the mechanism which makes the entire Reshuffle experience possible. At build time, our plugin analyzes any files that include this macro and intelligently replaces your local JavaScript backend calls with Reshuffle RPC calls.
 
 2. Import the relevant `@exposed` and `exported` functions from your backend
 
