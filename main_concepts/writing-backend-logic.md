@@ -35,7 +35,7 @@ That’s all it takes to turn your ordinary JavaScript into an always-available 
 
 **1. Any Reshuffle backend function that will be used by the frontend, must have the `@expose` tag and be exported using ES6 export/import semantics.**
 	
-<div className='good-example'> GOOD (has both export and expose) </div>
+<div className='good-example'> GOOD (has both export and @expose) </div>
 
 ```js
 /* @expose */
@@ -44,7 +44,7 @@ export async function hello(someWord) {
 
 ***
 
-<div className='bad-example'> NOT GOOD (missing expose) </div>
+<div className='bad-example'> NOT GOOD (missing @expose) </div>
 
 ```js
 export async function hello(someWord) {
