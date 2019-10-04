@@ -11,7 +11,7 @@ This section covers deploying your local code back to Reshuffle. We assume you h
 
 **1. Run the deploy script**
 
-Once you have a locally working app you are happy with, you will want to deploy it back to Reshuffle. In your command line, go  the project’s root folder and run npx reshuffle deploy.
+Once you have a locally working app you are happy with, you will want to deploy it back to Reshuffle. In your command line, go  the project’s root folder and run:
 
 ```js
 npx reshuffle deploy
