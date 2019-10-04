@@ -60,7 +60,7 @@ You can learn more about Reshuffle by reading the [dev docs](https://dev.reshuff
 
 * [API Reference](dev-docs.reshuffle.com)
 * [Main Concepts](dev.reshuffle.com/hello-reshuffle)
-* [Starting from a Template](dev.reshuffle.com/starting-from-a-template)
+* [Getting Started](dev.reshuffle.com/getting-started)
 * [Running Locally](dev.reshuffle.com/running-locally)
 
 You can learn more about [Create React App by reading the docs.](https://facebook.github.io/create-react-app/docs/getting-started).
