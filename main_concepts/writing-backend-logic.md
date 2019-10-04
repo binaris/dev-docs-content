@@ -97,7 +97,7 @@ export async function hello() {
 }
 ```
 
-There are no config or migration files, “it just works”. Just as with the macro, there are some things to consider when using Reshuffle DB. 
+There are no config or migration files - “it just works”. Just as with the macro, there are some things to consider when using Reshuffle DB. 
 
 1. The DB can only be used from a Reshuffle backend (anywhere that a Reshuffle macro is valid, the DB is valid).
 
