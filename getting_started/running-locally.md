@@ -6,7 +6,7 @@ category: "Getting Started"
 priority: 1
 ---
 
-# Working locally
+# Running locally
 This section covers how to download an app template and modify it to make it to meet your needs. We assume you have read and executed the steps in the [previous section](https://dev.reshuffle.app/starting-from-a-template). 
 
 **1. Download your template**
