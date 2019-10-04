@@ -99,9 +99,9 @@ Start that process by modifying the `onClick` logic we wrote originally, to inst
 </button>
 ```
 
-As you can see, we no longer directly use `setNum` to modify the local value. Instead, we call out to the `addAndGet` function, and then only update `setNum` after we’ve received the remote value from our backend.
+As you can see, we no longer directly use `setNum` to modify the local value. Instead, we call out to the `addAndGet` function, and only update `setNum` after we’ve received the remote value from our backend.
 
-This provides a semi-working version of the hello world app, but you’ll notice that refreshes to the page break the initial displayed value. To remedy this, let’s take utilize the [useEffect](https://reactjs.org/docs/hooks-effect.html) hook provided by React. `useEffect` allows us to write code that will only be called once per Component lifecycle, perfect for initialization. Start by adding the required `useEffect` import at the top of App.js
+This provides a semi-working version of the hello world app, but you’ll notice that refreshes to the page break the initial displayed value. To remedy this, let’s utilize the [useEffect](https://reactjs.org/docs/hooks-effect.html) hook provided by React. `useEffect` allows us to write code that will only be called once per Component lifecycle, perfect for initialization. Start by adding the required `useEffect` import at the top of App.js
 
 ```jsx
 import React, { useState, useEffect } from 'react';
