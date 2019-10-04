@@ -22,7 +22,7 @@ If you have not authenticated before, this script will walk you through a web au
 <br>
 <img src="https://raw.githubusercontent.com/binaris/dev-docs-content/master/assets/deploy-to-reshuffle1.png?token=AAR6X6ZKWVEFWMJ2XMAXR3K5S3EOU" alt="drawing" style="width:400px;"/>
 
-Once you connected your GitHub account, return to the command line. At this point, Reshuffle might be prompt you to select the project you want to deploy to. This only happens when Reshuffle is unsure  which app you are targeting for deployment. After this is done, Reshuffle will deploy your app (including both backend and frontend) to your online app.  
+Once you connect your GitHub account, return to the command line. At this point, Reshuffle CLI might prompt you to select the project you want to deploy to. This only happens when Reshuffle is unsure  which app you are targeting for deployment. After this is done, Reshuffle will deploy your app (including both backend and frontend) to your online app.  
 
 You're done! Enjoy your new app!
 
