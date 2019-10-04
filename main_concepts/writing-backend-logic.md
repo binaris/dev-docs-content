@@ -83,7 +83,7 @@ The macro covers how we write backend code, but we still don’t have a way to p
 
 ## Reshuffle DB
 
-Reshuffle DB is a fully managed database with intuitive  semantics. The goal of Reshuffle DB is to get out of your way as much as possible, so great lengths have been taken to abstract away unneeded complexity. What’s left, is a simple interface that provides all the functionality needed to store critical application data. Here is the previous helloServer example, amended to use Reshuffle DB.
+Reshuffle DB is a fully managed database with intuitive  semantics. The goal of Reshuffle DB is to get out of your way as much as possible, so great lengths have been taken to abstract away unneeded complexity. What’s left is a simple interface that provides all the functionality needed to store critical application data. Here is the previous helloServer example, amended to use Reshuffle DB.
 
 <div style="text-align: right;"><span style="padding: 1%; background-color: rgba(35, 191, 98, 0.5)"> backend/helloServer.js  ↓</span></div>
 
