@@ -53,7 +53,7 @@ This is an example of a template_init_data.json file, taken from our Phonebook t
 
 5. Submit your template for review [here](https://docs.google.com/forms/d/e/1FAIpQLScya5VzPLPfDMxGMFWkU8ABDRtBrAxfsb1v4tuT92HS1JTJyQ/viewform).
 
-6. We will review the template, provide you with feedback, and publish the template on Reshuffle, with credit to you.
+6. We will review the template, provide you with feedback, and once approved, publish the template on Reshuffle, with credit to you.
 
 7. If you need to update your template, just submit it again, and note in the comment that this is an update. 
 
