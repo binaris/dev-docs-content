@@ -59,7 +59,7 @@ In this section, we will finish creating the hello-world example, by connecting 
 
 #### Using the Reshuffle backend from the frontend
 
-Connecting the frontend to the backend is super simple with Reshuffle. Here’s the two simple things you should know:
+Connecting the frontend to the backend is super simple with Reshuffle. Here are the two simple things you should know:
 
 1. In every frontend file that intends to use the backend, import the reshuffle macro (only once per file) at the top of the file
 
