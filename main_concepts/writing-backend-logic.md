@@ -75,7 +75,7 @@ async function hello(someWord) {
 
 ![](https://raw.githubusercontent.com/binaris/dev-docs-content/master/assets/bad-backend-dir-placement.png?token=AGTTQOXA44ETKPQTAFEW23S5SOH7Q)
 
-**3. Reshuffle supports npm modules out of the box, just make sure to include them in your backend folders package.json (and install them as you would normally using npm install).**
+**3. Reshuffle supports npm modules out of the box, just make sure to include them in your root package.json (and install them as you would normally using npm install).**
 
 **4. Importing frontend code into backend files is currently not supported.**
 
