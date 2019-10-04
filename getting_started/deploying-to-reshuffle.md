@@ -7,7 +7,7 @@ priority: 2
 ---
 
 # Deploying to Reshuffle
-This section covers deploying your local code back to Reshuffle. We assume you have read and executed the steps in the [previous section](https://dev.reshuffle.app/running-locally). 
+This section covers deploying your local code back to Reshuffle. We assume you have read and executed the steps in the [previous section](./running-locally).
 
 **1. Run the deploy script**
 
@@ -28,4 +28,4 @@ You're done! Enjoy your new app!
 
 **2. Bonus points: Join the community**
 
-Be a part of our community on Discord - [join here](https://discordapp.com/channels/612049440047497217/612049440047497219).  If you are feeling extra awesome, you should create and share your own template with the community. This way other developers will be able to innovate on top of it. Here is how to [submit your  own template](https://dev.reshuffle.app/submitting-a-template).
+Be a part of our community on Discord - [join here](https://discordapp.com/channels/612049440047497217/612049440047497219).  If you are feeling extra awesome, you should create and share your own template with the community. This way other developers will be able to innovate on top of it. Here is how to [submit your  own template](./submitting-a-template).

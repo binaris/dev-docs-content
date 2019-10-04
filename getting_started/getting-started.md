@@ -33,7 +33,7 @@ Once you hit Remix, the app is deployed and linked to your account (at this poin
 
 <img src="https://raw.githubusercontent.com/binaris/dev-docs-content/master/assets/getting-started3.png?token=AAR6X626MRZ3MKHKMNGKQKC5S3BHE" alt="drawing" style="width:600px;"/>
 
-In the [next sections](https://dev.reshuffle.app/running-locally), we will cover editing your app and deploying it on Reshuffle.
+In the [next sections](./running-locally), we will cover editing your app and deploying it on Reshuffle.
 
 
 
