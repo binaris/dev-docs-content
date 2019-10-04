@@ -116,7 +116,7 @@ function App() {
 }
 ```
 
-Now that we have our basic layout, continue by creating a stateful value to plug into the <span>. We can accomplish this through React’s [“useState”](https://reactjs.org/docs/hooks-state.html) hook. 
+Now that we have our basic layout, continue by creating a stateful value to plug into the `<span>`. We can accomplish this through React’s [“useState”](https://reactjs.org/docs/hooks-state.html) hook. 
 
 1. Import `useState` from React
 
