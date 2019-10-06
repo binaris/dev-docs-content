@@ -7,7 +7,7 @@ priority: 0
 ---
 
 # Reshuffle Privacy Policy
-## Last updated: Sep 26 2019
+## Last updated: Sep 17 2019
 
 Binaris, Inc. (known as "**Reshuffle**") and our affiliated and subsidiary companies (together, "Reshuffle", "we", "us", or "our") recognize the importance of privacy. Reshuffle provides a full-stack, cloud-based solution to power applications developed by our users ("User", "you," or "yours"). In this Privacy Policy ("**Policy**"), we describe how we collect, use, and disclose information that we obtain about users of our website [reshuffle.com](https://reshuffle.com) and its sub-domains, as well as any services offered therein (collectively, the "Site"), as well as information obtained via the Reshuffle application development Platform known as Shift (the, "Platform"). Collectively, the Site and Platform are referred to herein as the "Services".
 
@@ -169,4 +169,3 @@ This Privacy Policy is current as of the Effective Date set forth above. We may 
 ### 13. Contact Us
 
 If you have any questions about our information practices or this Privacy Policy, or if you wish to submit a request to exercise your rights as detailed in this Privacy Policy, please contact us at [legal@reshuffle.com](mailto:legal@reshuffle.com).
-
