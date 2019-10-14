@@ -1,3 +1,11 @@
+---
+title: Pricing FAQ
+route: pricing-faq
+description: 'Pricing frequently asked questions'
+category: 'FAQ'
+priority: 6
+---
+
 # Pricing
 
 ### Question: Does Reshuffle cost money?

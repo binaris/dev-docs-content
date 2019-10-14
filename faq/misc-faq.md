@@ -1,3 +1,11 @@
+---
+title: Misc FAQ
+route: misc-faq
+description: 'Misc frequently asked questions'
+category: 'FAQ'
+priority: 8
+---
+
 # Misc
 
 ### Question: Do I need a Github account to use Reshuffle?
