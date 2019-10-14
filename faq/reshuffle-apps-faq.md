@@ -1,3 +1,11 @@
+---
+title: Reshuffle Apps FAQ
+route: reshuffle-apps-faq
+description: 'Reshuffle apps frequently asked questions'
+category: 'FAQ'
+priority: 4
+---
+
 # Reshuffle Apps
 
 ### Question: Can I delete an app?

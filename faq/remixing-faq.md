@@ -1,3 +1,11 @@
+---
+title: Remixing and Templates FAQ
+route: remixing-faq
+description: 'Remixing and templates frequently asked questions'
+category: 'FAQ'
+priority: 5
+---
+
 
 # Remixing and Templates
 

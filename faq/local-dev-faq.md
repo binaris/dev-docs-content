@@ -1,3 +1,11 @@
+---
+title: Local Dev FAQ
+route: local-dev-faq
+description: 'Local dev frequently asked questions'
+category: 'FAQ'
+priority: 3
+---
+
 # Local Development
 
 ### Question: What platforms are supported for local development?

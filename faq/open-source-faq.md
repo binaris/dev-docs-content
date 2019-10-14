@@ -1,3 +1,11 @@
+---
+title: Open Source FAQ
+route: open-source-faq
+description: 'Open source frequently asked questions'
+category: 'FAQ'
+priority: 7
+---
+
 # Open Source
 
 ### Question: How do I explore the Reshuffle source code

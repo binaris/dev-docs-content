@@ -1,4 +1,12 @@
-## Reshuffle Frontend Framework
+---
+title: Frontend FAQ
+route: frontend-faq
+description: 'Frontend framework frequently asked questions'
+category: 'FAQ'
+priority: 0
+---
+
+# Reshuffle Frontend Framework
 
 ### Question: Can I use Reshuffle with my existing Create React App project?
 

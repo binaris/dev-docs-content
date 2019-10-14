@@ -1,3 +1,11 @@
+---
+title: ReshuffleDB FAQ
+route: db-faq
+description: 'ReshuffleDB frequently asked questions'
+category: 'FAQ'
+priority: 2
+---
+
 # ReshuffleDB
 
 ### Question: Is ReshuffleDB a SQL or noSQL database?
