@@ -1,5 +1,5 @@
 ---
-title: Frontend FAQ
+title: Frontend
 route: frontend-faq
 description: 'Frontend framework frequently asked questions'
 category: 'FAQ'

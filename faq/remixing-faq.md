@@ -1,5 +1,5 @@
 ---
-title: Remixing and Templates FAQ
+title: Remixing and Templates
 route: remixing-faq
 description: 'Remixing and templates frequently asked questions'
 category: 'FAQ'

@@ -1,5 +1,5 @@
 ---
-title: ReshuffleDB FAQ
+title: ReshuffleDB
 route: db-faq
 description: 'ReshuffleDB frequently asked questions'
 category: 'FAQ'

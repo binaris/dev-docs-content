@@ -1,5 +1,5 @@
 ---
-title: Pricing FAQ
+title: Pricing
 route: pricing-faq
 description: 'Pricing frequently asked questions'
 category: 'FAQ'

@@ -1,5 +1,5 @@
 ---
-title: Misc FAQ
+title: Misc
 route: misc-faq
 description: 'Misc frequently asked questions'
 category: 'FAQ'

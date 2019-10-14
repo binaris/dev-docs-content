@@ -1,5 +1,5 @@
 ---
-title: Backend FAQ
+title: Backend
 route: backend-faq
 description: 'Backend frequently asked questions'
 category: 'FAQ'

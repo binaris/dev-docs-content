@@ -1,5 +1,5 @@
 ---
-title: Reshuffle Apps FAQ
+title: Reshuffle Apps
 route: reshuffle-apps-faq
 description: 'Reshuffle apps frequently asked questions'
 category: 'FAQ'

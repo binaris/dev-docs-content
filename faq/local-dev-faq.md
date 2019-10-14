@@ -1,5 +1,5 @@
 ---
-title: Local Dev FAQ
+title: Local Dev
 route: local-dev-faq
 description: 'Local dev frequently asked questions'
 category: 'FAQ'

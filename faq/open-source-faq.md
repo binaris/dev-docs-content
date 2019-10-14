@@ -1,5 +1,5 @@
 ---
-title: Open Source FAQ
+title: Open Source
 route: open-source-faq
 description: 'Open source frequently asked questions'
 category: 'FAQ'
