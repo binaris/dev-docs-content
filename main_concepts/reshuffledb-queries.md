@@ -3,7 +3,7 @@ title: ReshuffleDB Queries
 route: reshuffledb-queries
 description: 'ReshuffleDB Queries'
 category: 'Main Concepts'
-priority: 12
+priority: 13
 ---
 
 # ReshuffleDB Queries 
