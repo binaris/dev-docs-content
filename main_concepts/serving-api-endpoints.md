@@ -148,3 +148,11 @@ app.use(defaultHandler);
 
 export default app;
 ```
+
+### Serving static content
+
+You'll need to be aware of how path resolution differs between the cloud and local environment if you want to serve static content with express. `__dirname` will not work as this resolves differently based on which process originally ran the file. Here is an example of how to serve static assets from the `public` directory:
+
+```js
+app.use('/', express.static('./public'));
+```
