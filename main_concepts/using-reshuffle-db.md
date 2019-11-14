@@ -8,7 +8,7 @@ priority: 12
 
 # Using Reshuffle DB
 
-ReshuffleDB is a key value store. It's capabilities include reading, writing and deleting single documents. ReshuffleDB surfaces four core operations `create`, `get`, `update`, and `remove` which allow you to conveniently modify and read data. `find` is also available if you need to query multiple documents, which you can read more about [here]([https://dev.reshuffle.app/reshuffledb-queries](https://dev.reshuffle.app/reshuffledb-queries)).
+ReshuffleDB is a key value store. It's capabilities include reading, writing and deleting single documents. ReshuffleDB surfaces four core operations `create`, `get`, `update`, and `remove` which allow you to conveniently modify and read data. `find` is also available if you need to query multiple documents, which you can read more about [here](https://dev.reshuffle.app/reshuffledb-queries).
 
 To use any of the capabilities provided by ReshuffleDB you must first import them from `@reshuffle/db` like so:
 
@@ -83,7 +83,7 @@ const updatedColors = await update('colors', (defaultColors = []) => {
 });
 ```
 
-Updates the document value at the specified key, creating a new document if the key did not previously exist. Updater function input argument will be `undefined` if the specified key does not already exist. The default initial value for the updater can be controlled using the [standard JavaScript default argument syntax]([https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters)).
+Updates the document value at the specified key, creating a new document if the key did not previously exist. Updater function input argument will be `undefined` if the specified key does not already exist. The default initial value for the updater can be controlled using the [standard JavaScript default argument syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters).
 
 **Parameters**
 
@@ -143,4 +143,4 @@ Values stored in the DB should be JSONable. You can store primitive types: strin
 
 Values stored in the DB are read back to the user as stored. We do not guarantee any ordering on the keys.
 
-- [Next, learn how to execute complex queries against ReshuffleDB] ([https://dev.reshuffle.app/reshuffledb-queries](https://dev.reshuffle.app/reshuffledb-queries))
+- [Next, learn how to execute complex queries against ReshuffleDB](https://dev.reshuffle.app/reshuffledb-queries)
