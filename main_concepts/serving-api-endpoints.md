@@ -30,7 +30,7 @@ $ touch backend/_handler.js # use "type NUL >> filename" on Windows
 
 > It’s important to note that the file MUST be called `_handler.js`. This makes it possible for the Reshuffle runtime to confidently identify whether your app has an express server.
 
-Now that we’ve created `backend_handler.js`, we need to install the express dependency into our project.
+Now that we’ve created `_handler.js`, we need to install the express dependency into our project.
 
 ```bash
 $ npm install --save express
