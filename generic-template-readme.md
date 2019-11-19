@@ -7,7 +7,7 @@ This is a Reshuffle template app. Reshuffle provides a progressive way to build 
 1. `npm start` to run a local version of your app.
 2. Make changes, and see them reflected locally.
   > Note: Your frontend code resides in the standard `src` directory.
-          Backend code needs to reside in the `backend` directory. [Read more here](dev.reshuffle.com)
+          Backend code needs to reside in the `backend` directory. [Read more here](dev.reshuffle.app)
 3. `npx reshuffle deploy` to deploy your app to the cloud.
 
 ## Available Scripts
@@ -36,7 +36,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
-Read more about deploying with Reshuffle [here](https://dev.reshuffle.com/deploying-to-reshuffle)
+Read more about deploying with Reshuffle [here](https://dev.reshuffle.app/deploying-to-reshuffle)
 
 ### `npx reshuffle deploy`
 
@@ -56,12 +56,12 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Learn More
 
-You can learn more about Reshuffle by reading the [dev docs](https://dev.reshuffle.com).
+You can learn more about Reshuffle by reading the [dev docs](https://dev.reshuffle.app).
 
 * [API Reference](dev-docs.reshuffle.com)
-* [Main Concepts](dev.reshuffle.com/hello-reshuffle)
-* [Getting Started](dev.reshuffle.com/getting-started)
-* [Running Locally](dev.reshuffle.com/running-locally)
+* [Main Concepts](dev.reshuffle.app/hello-reshuffle)
+* [Getting Started](dev.reshuffle.app/getting-started)
+* [Running Locally](dev.reshuffle.app/running-locally)
 
 You can learn more about [Create React App by reading the docs.](https://facebook.github.io/create-react-app/docs/getting-started).
 
