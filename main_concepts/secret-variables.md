@@ -3,7 +3,7 @@ title: Secret Variables
 route: secret-variables
 description: 'Using secret variables'
 category: 'Main Concepts'
-priority: 10
+priority: 14
 ---
 
 # Secret Variables
