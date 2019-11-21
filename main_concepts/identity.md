@@ -45,36 +45,36 @@ The [Reshuffle React Auth library]() provides a set of client-side API’s which
 
 ## Adding Reshuffle Identity to the backend
 
-To support Reshuffle identity in your app you’ll need to add the `authRouter` middleware to your apps express instance. This is mandatory, even if you plan to write the rest of your backend with decorated functions. Below is the minimal [Reshuffle API Serving](https://dev.reshuffle.app/serving-api-endpoints) file needed to support identity:
+To support Reshuffle identity in your app you’ll need to add the `authHandler` middleware to your apps express instance. This is mandatory, even if you plan to write the rest of your backend with decorated functions. Below is the minimal [Reshuffle API Serving](https://dev.reshuffle.app/serving-api-endpoints) file needed to support identity:
 
 <div style="text-align: right;"><span style="padding: 1%; background-color: rgba(35, 191, 98, 0.5)">backend/_handler.js ↓</span></div>
 
 ```js
 import express from 'express';
 import { defaultHandler } from '@reshuffle/server-function';
-import { authRouter } from '@reshuffle/passport';
+import { authHandler } from '@reshuffle/passport';
 
 const app = express();
-app.use('/', authRouter());
+app.use(authHandler);
 
 app.use(defaultHandler);
 
 export default app;
 ```
 
-The `authRouter` middleware is responsible for three things:
+The `authHandler` middleware is responsible for three things:
 
 1. Adds a `/login` endpoint to login users
 1. Adds a `/logout` endpoint to logout users
 1. Automatically creates and maintains sessions for logged in users (demonstrated below)
 
-Aside from the required boilerplate, `authRouter` adds automatic session support for your app. The `user` object will contain profile information pertaining to the user who originated the request. The user is available to express endpoints via `req.user`:
+Aside from the required boilerplate, `authHandler` adds automatic session support for your app. The `user` object will contain profile information pertaining to the user who originated the request. The user is available to express endpoints via `req.user`:
 
 <div style="text-align: right;"><span style="padding: 1%; background-color: rgba(35, 191, 98, 0.5)">backend/_handler.js ↓</span></div>
 
 ```js
 const app = express();
-app.use('/', authRouter());
+app.use(authHandler);
 
 app.get(‘/get-user-todos’, (req, res) => {
   const { id } = req.user;
