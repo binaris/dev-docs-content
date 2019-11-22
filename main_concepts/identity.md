@@ -37,11 +37,11 @@ The Reshuffle Identity service is backed by Auth0 and requires no configuration.
 
 ### Reshuffle Identity backend library
 
-The [Reshuffle Identity backend library]() integrates directly with Reshuffle client-side auth removing the need to directly create client/server sessions. This library also provides `/login` and `/logout` and `/whoami` endpoints for your app.
+The [Reshuffle Identity backend library](https://www.npmjs.com/package/@reshuffle/passport) integrates directly with Reshuffle client-side auth removing the need to directly create client/server sessions. This library also provides `/login` and `/logout` and `/whoami` endpoints for your app.
 
 ### Reshuffle Identity React library
 
-The [Reshuffle React Auth library]() provides a set of client-side API’s which simplify and streamline the process of using Reshuffle Identity in your webapp. 
+The [Reshuffle React Auth library](https://www.npmjs.com/package/@reshuffle/react-auth) provides a set of client-side API’s which simplify and streamline the process of using Reshuffle Identity in your webapp. 
 
 ## Adding Reshuffle Identity to the backend
 
