@@ -1,7 +1,7 @@
 ---
 title: Identity
 route: identity
-description: ‘How to take advantage of Reshuffle identity’
+description: 'How to take advantage of Reshuffle identity'
 category: 'Main Concepts'
 priority: 10
 ---
@@ -21,7 +21,7 @@ priority: 10
 
 # Reshuffle Identity
 
-At Reshuffle we’re constantly reminded of how frustrating user authentication and identity management flows can be. Even integrating “out of the box” solutions will often have you wading through documentation and continuously scratching your head. Reshuffle identity focuses on simplifying this process, by providing an auth- zero-touch identity and authentication solution, that enables you to instantly add user support to your Reshuffle app.
+At Reshuffle we're constantly reminded of how frustrating user authentication and identity management flows can be. Even integrating “out of the box” solutions will often have you wading through documentation and continuously scratching your head. Reshuffle identity focuses on simplifying this process, by providing an auth- zero-touch identity and authentication solution, that enables you to instantly add user support to your Reshuffle app.
 
 ## What is Reshuffle Identity?
 
@@ -33,7 +33,7 @@ Reshuffle identity has three major components:
 
 ### Reshuffle Identity service
 
-The Reshuffle Identity service is backed by Auth0 and requires no configuration. We handle the process of provisioning the tokens and credentials behind the scenes, so you don’t have to. Reshuffle Identity is automatically added to new and existing Reshuffle apps, all you have to do is use it! 
+The Reshuffle Identity service is backed by Auth0 and requires no configuration. We handle the process of provisioning the tokens and credentials behind the scenes, so you don't have to. Reshuffle Identity is automatically added to new and existing Reshuffle apps, all you have to do is use it! 
 
 ### Reshuffle Identity backend library
 
@@ -45,7 +45,7 @@ The [Reshuffle React Auth library](https://www.npmjs.com/package/@reshuffle/reac
 
 ## Adding Reshuffle Identity to the backend
 
-To support Reshuffle identity in your app you’ll need to add the `authHandler` middleware to your apps express instance. This is mandatory, even if you plan to write the rest of your backend with decorated functions. Below is the minimal [Reshuffle API Serving](https://dev.reshuffle.app/serving-api-endpoints) file needed to support identity:
+To support Reshuffle identity in your app you'll need to add the `authHandler` middleware to your apps express instance. This is mandatory, even if you plan to write the rest of your backend with decorated functions. Below is the minimal [Reshuffle API Serving](https://dev.reshuffle.app/serving-api-endpoints) file needed to support identity:
 
 <div style="text-align: right;"><span style="padding: 1%; background-color: rgba(35, 191, 98, 0.5)">backend/_handler.js ↓</span></div>
 
@@ -76,7 +76,7 @@ Aside from the required boilerplate, `authHandler` adds automatic session suppor
 const app = express();
 app.use(authHandler);
 
-app.get(‘/get-user-todos’, (req, res) => {
+app.get(‘/get-user-todos', (req, res) => {
   const { id } = req.user;
   // get all todolist
   return get(`/todos/${id}`);
@@ -87,12 +87,12 @@ app.use(defaultHandler);
 export default app;
 ```
 
-If you’re using decorated functions, you’ll access the session via `getCurrentUser`. Here’s an example that uses `getCurrentUser` to fetch a users todos:
+If you're using decorated functions, you'll access the session via `getCurrentUser`. Here's an example that uses `getCurrentUser` to fetch a users todos:
 
 <div style="text-align: right;"><span style="padding: 1%; background-color: rgba(35, 191, 98, 0.5)">backend/hello.js ↓</span></div>
 
 ```js
-import { get } from ‘@reshuffle/db’;
+import { get } from ‘@reshuffle/db';
 import { getCurrentUser } from '@reshuffle/server-function';
 
 /* @expose */
@@ -107,13 +107,13 @@ export async function getTodoList() {
 
 ## Adding Reshuffle Identity to the frontend
 
-Reshuffle provides a React based (other frameworks coming soon) library that seamlessly integrates with Reshuffle identity. Before you can start using it, you’ll need to install two dependencies [@reshuffle/react-auth](https://www.npmjs.com/package/@reshuffle/react-auth) and [@reshuffle/passport](https://www.npmjs.com/package/@reshuffle/passport) via npm:
+Reshuffle provides a React based (other frameworks coming soon) library that seamlessly integrates with Reshuffle identity. Before you can start using it, you'll need to install two dependencies [@reshuffle/react-auth](https://www.npmjs.com/package/@reshuffle/react-auth) and [@reshuffle/passport](https://www.npmjs.com/package/@reshuffle/passport) via npm:
 
 ```bash
 npm install @reshuffle/react-auth @reshuffle/passport
 ```
 
-Now that things are properly installed, we’ll need to wrap our top level `App` component in a Reshuffle `AuthProvider`:
+Now that things are properly installed, we'll need to wrap our top level `App` component in a Reshuffle `AuthProvider`:
 
 <div style="text-align: right;"><span style="padding: 1%; background-color: rgba(35, 191, 98, 0.5)"> src/index.js ↓</span></div>
 
@@ -132,9 +132,9 @@ ReactDOM.render((
 ), document.getElementById('root'));
 ```
 
-The `AuthProvider` utilizes [React Context](https://reactjs.org/docs/context.html) to propagate auth state throughout the rest of your app. For this reason, you’ll most likely want to wrap your highest level component with the `AuthProvider`.
+The `AuthProvider` utilizes [React Context](https://reactjs.org/docs/context.html) to propagate auth state throughout the rest of your app. For this reason, you'll most likely want to wrap your highest level component with the `AuthProvider`.
 
-Now that we’ve configured the provider, we can start adding basic login/logout functionality to our site. The first step is to import a hook provided by Reshuffle, that handles the tricky parts of authentication and identity management for you.
+Now that we've configured the provider, we can start adding basic login/logout functionality to our site. The first step is to import a hook provided by Reshuffle, that handles the tricky parts of authentication and identity management for you.
 
 <div style="text-align: right;"><span style="padding: 1%; background-color: rgba(35, 191, 98, 0.5)">src/App.js ↓</span></div>
 
@@ -142,9 +142,9 @@ Now that we’ve configured the provider, we can start adding basic login/logout
 import { useAuth } from '@reshuffle/react-auth';
 ```
 
-`useAuth` provides a set of variables that track the state of auth for the current logged in user. Also provides application specific URL’s that allow users to login to your site.
+`useAuth` provides a set of variables that track the state of auth for the current logged in user. Also provides application specific URL's that allow users to login to your site.
 
-At the top of our `App.js` we’ll utilize `useAuth` to build our simple auth example:
+At the top of our `App.js` we'll utilize `useAuth` to build our simple auth example:
 
 <div style="text-align: right;"><span style="padding: 1%; background-color: rgba(35, 191, 98, 0.5)">src/App.js ↓</span></div>
 
@@ -161,7 +161,7 @@ export default function App() {
   ...
 ```
 
-Now that we have our hook setup, we’ll create a simple view that represents the current auth state of your Reshuffle app. First we’ll handle loading transitions, `useAuth` provides the `loading` variable that indicates whether the app is in a loading state.  We’ll utilize that to conditionally render a loading view for our app:
+Now that we have our hook setup, we'll create a simple view that represents the current auth state of your Reshuffle app. First we'll handle loading transitions, `useAuth` provides the `loading` variable that indicates whether the app is in a loading state.  We'll utilize that to conditionally render a loading view for our app:
 
 <div style="text-align: right;"><span style="padding: 1%; background-color: rgba(35, 191, 98, 0.5)">src/App.js ↓</span></div>
 
@@ -180,7 +180,7 @@ if (loading) {
 }
 ```
 
-`useAuth` also provides the `error` variable that represents a potential error message associated with auth. Once again, let’s use that to conditionally render an error view:
+`useAuth` also provides the `error` variable that represents a potential error message associated with auth. Once again, let's use that to conditionally render an error view:
 
 <div style="text-align: right;"><span style="padding: 1%; background-color: rgba(35, 191, 98, 0.5)">src/App.js ↓</span></div>
 
@@ -194,7 +194,7 @@ if (error) {
 }
 ```
 
-Now that we’ve handled those cases, let’s create a simple view that enables users of our app to login and logout. We will accomplish this using the `getLoginURL` and `getLogoutURL` functions provided by `useAuth`.
+Now that we've handled those cases, let's create a simple view that enables users of our app to login and logout. We will accomplish this using the `getLoginURL` and `getLogoutURL` functions provided by `useAuth`.
 
 <div style="text-align: right;"><span style="padding: 1%; background-color: rgba(35, 191, 98, 0.5)">src/App.js ↓</span></div>
 
@@ -210,8 +210,7 @@ return (
         <>
           <img src={profile.picture} height={20} />
           <span>{profile.displayName}</span>
-          <a href={getLogoutURL()}>Logout</a>
-        </>
+          <a href={getLogoutURL()}>Logout</a> </>
       ) : (
         <a href={getLoginURL()}>Login</a>
       )
@@ -221,11 +220,7 @@ return (
 );
 ```
 
-Let’s quickly cover what’s happening here. Within our inner div, we’re conditionally rendering the users profile information based on the current value of `authenticated` provided by `useAuth`. In the case that the user is authenticated, we display some basic profile information such as their picture and display name along with a logout link. In the case that the user is not authenticated, we render a single link, which will allow users to login to your app when clicked. Here is the final version of `App.js`:
-
-
-
-
+Let's quickly cover what's happening here. Within our inner div, we're conditionally rendering the users profile information based on the current value of `authenticated` provided by `useAuth`. In the case that the user is authenticated, we display some basic profile information such as their picture and display name along with a logout link. In the case that the user is not authenticated, we render a single link, which will allow users to login to your app when clicked. Here is the final version of `App.js`:
 
 
 
@@ -352,9 +347,34 @@ interface Profile {
 }
 ```
 
+## Opening Reshuffle Identity in a new window
+
+It's possible to open the login view in a new window. To do so, follow the pattern demonstrated below:
+
+```jsx
+  ...
+
+    getLoginURL,
+    getLogoutURL,
+    login,
+  } = useAuth();
+  
+  ...
+  
+  return (
+    <a href='/login' onClick={(e) => {
+      login({ newWindow: true }); 
+      e.preventDefault();
+    }}>
+      Login from new window
+    </a>
+  );
+}
+```
+
 ## Conclusion
 
-Reshuffle Identity greatly reduces the barrier of entry required to support users for new and existing apps. We’ve done our best to provide a rich and powerful experience, without wasting your time worrying about configuration and security. As always, we live for feedback from our developers, so please let us know if you like or don’t like what you see here.
+Reshuffle Identity greatly reduces the barrier of entry required to support users for new and existing apps. We've done our best to provide a rich and powerful experience, without wasting your time worrying about configuration and security. As always, we live for feedback from our developers, so please let us know if you like or don't like what you see here.
 
 
 
