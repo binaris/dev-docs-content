@@ -1,5 +1,5 @@
 ---
-title: Reshuffle Custom Domains
+title: Custom Domains
 route: custom-domains
 description: ‘How to add a custom domain to your Reshuffle site’
 category: 'Main Concepts'
