@@ -274,7 +274,7 @@ export default function App() {
 }
 ```
 
-## Using auth with class components
+### Using auth with class components
 
 In addition to the `useAuth` hook, we provide direct access to the AuthContext allowing auth to be utilized in class components. A simple example demonstrating Context usage in a class component is shown below:
 
@@ -333,7 +333,7 @@ export default class App extends React.Component {
 
 <br />
 
-## Profile API
+### Profile API
 
 Below is the API of the `profile` object returned by Reshuffle Identity:
 
@@ -347,7 +347,7 @@ interface Profile {
 }
 ```
 
-## Opening Reshuffle Identity in a new window
+### Opening Reshuffle Identity in a new window
 
 It's possible to open the login view in a new window. To do so, follow the pattern demonstrated below:
 
@@ -370,6 +370,15 @@ It's possible to open the login view in a new window. To do so, follow the patte
     </a>
   );
 }
+```
+
+### Setting a custom login redirect link
+
+It's possible to set a custom `returnTo` URL for the login link. To accomplish this, `getLoginURL` takes in an optional `returnTo` argument. The path provided must be a fully qualified path (ie: `mysite.com/somepath/path`) and not just a relative link (ie: `/path`). Here is a generic way to handle this between local/remote development
+
+
+```jsx
+getLoginURL(`${window.location.origin.toString()}/hello`)
 ```
 
 ## Conclusion
