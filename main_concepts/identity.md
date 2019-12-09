@@ -10,7 +10,7 @@ priority: 10
 
 ```json
 "@reshuffle/code-transform": "^0.1.0",
-"@reshuffle/db": "^0.5.4",
+"@reshuffle/db": "^0.5.5",
 "@reshuffle/fetch-runtime": "^0.1.0",
 "@reshuffle/local-proxy": "^0.3.1",
 "@reshuffle/passport": "0.0.4",
