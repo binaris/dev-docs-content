@@ -59,3 +59,8 @@ Answer: The current best practice is to spin up the local dev environment and ru
 ### Question: Why do I keep seeing all these errors about “/invoke”?
 
 Answer: ‘/invoke’ is the generic endpoint used to communicate with your backend from the client. It indicates that some part of your backend code encountered an error that caused execution to fail. The `/invoke` error should have specifics about the code that failed, but if it doesn’t please let us know.
+
+
+### Question: What will the value of `NODE_ENV` be for deployed apps?
+
+When apps are deployed to Reshuffle, `NODE_ENV` is set to `production`.
