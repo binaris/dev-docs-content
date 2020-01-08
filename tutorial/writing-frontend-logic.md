@@ -2,7 +2,7 @@
 title: Writing Frontend Logic
 route: writing-frontend-logic
 description: 'Writing frontend logic for Reshuffle'
-category: 'Main Concepts'
+category: 'Tutorial'
 priority: 1
 numbered: true
 ---

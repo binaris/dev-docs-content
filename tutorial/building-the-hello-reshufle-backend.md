@@ -2,7 +2,7 @@
 title: Building the Hello Reshuffle Backend
 route: building-the-hello-reshuffle-backend
 description: 'Building the hello Reshuffle backend'
-category: 'Main Concepts'
+category: 'Tutorial'
 numbered: true
 priority: 3
 ---

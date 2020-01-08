@@ -2,7 +2,7 @@
 title: Calling the Backend from the Frontend
 route: calling-the-backend-from-the-frontend
 description: 'Calling the Backend from the Frontend'
-category: 'Main Concepts'
+category: 'Tutorial'
 numbered: true
 priority: 4
 ---

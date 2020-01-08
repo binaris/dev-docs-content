@@ -2,7 +2,7 @@
 title: Hello Reshuffle
 route: hello-reshuffle
 description: 'The hello world program for Reshuffle'
-category: 'Main Concepts'
+category: 'Tutorial'
 priority: 0
 numbered: true
 ---

@@ -2,7 +2,7 @@
 title: Writing Backend Logic
 route: writing-backend-logic
 description: 'Writing backend logic for Reshuffle'
-category: 'Main Concepts'
+category: 'Tutorial'
 priority: 2
 numbered: true
 ---
